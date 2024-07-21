@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - STEM Division Evaluation System</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/auth/login" class="active">Login</a></li>
+          <li><a href="/auth/register">Register</a></li>
+          <li><a href="/forms">Forms</a></li>
+          <li><a href="/resources">Resources</a></li>
+          <li><a href="/help">Help</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="login-container">
+        <h1>Login</h1>
+        <p>Please enter your username and password to access the STEM Division Evaluation System. If you don't have an account, you can register using the link below.</p>
+        <form action="/auth/login" method="POST">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+          
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          
+          <button type="submit">Log In</button>
+        </form>
+        <p class="register-link">Don't have an account? <a href="/auth/register">Register here</a></p>
+      </section>
+    </main>
+    <footer>
+      &copy; 2024 STEM Division
+    </footer>
+  </div>
+</body>
+</html>
+
+

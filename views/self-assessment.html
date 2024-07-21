@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self-Assessment Form - STEM Division Evaluation System</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/auth/login">Login</a></li>
+          <li><a href="/auth/register">Register</a></li>
+          <li><a href="/forms">Forms</a></li>
+          <li><a href="/resources">Resources</a></li>
+          <li><a href="/help">Help</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="form-container">
+        <h1>Self-Assessment Form</h1>
+        <form action="/submit-self-assessment" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="department">Department:</label>
+          <select id="department" name="department" required>
+            <option value="science">Science</option>
+            <option value="technology">Technology</option>
+            <option value="engineering">Engineering</option>
+            <option value="mathematics">Mathematics</option>
+          </select>
+
+          <label for="performance">Performance Overview:</label>
+          <textarea id="performance" name="performance" rows="5" required></textarea>
+
+          <label for="goals">Goals for Improvement:</label>
+          <textarea id="goals" name="goals" rows="5" required></textarea>
+
+          <label for="evidence">Supporting Evidence (optional):</label>
+          <input type="file" id="evidence" name="evidence" multiple>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      &copy; 2024 STEM Division
+    </footer>
+  </div>
+</body>
+</html>
+
+
