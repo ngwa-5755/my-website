@@ -398,7 +398,7 @@ footer {
     border: 2px solid #000; /* 2px border, solid line, black color */
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #f0f0f0;
+    background-color: #007bff;
     cursor: pointer;
 }
 
@@ -419,4 +419,9 @@ footer {
 .border-rounded {
     border: 2px solid #000;
     border-radius: 12px; /* Rounded corners */
+}
+/* Add hover effect for better interaction */
+.border-button:hover {
+    background-color: #333; /* Dark background on hover */
+    border-color: #fff; /* Light border on hover */
 }
