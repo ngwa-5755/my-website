@@ -393,3 +393,30 @@ footer {
   color: red;
   margin-top: 10px;
 }
+/* Basic border */
+.border-button {
+    border: 2px solid #000; /* 2px border, solid line, black color */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+/* Different border styles */
+.border-dashed {
+    border: 2px dashed #333; /* Dashed line */
+}
+
+.border-dotted {
+    border: 2px dotted #666; /* Dotted line */
+}
+
+.border-double {
+    border: 4px double #ff0000; /* Double line */
+}
+
+/* Rounded corners */
+.border-rounded {
+    border: 2px solid #000;
+    border-radius: 12px; /* Rounded corners */
+}
