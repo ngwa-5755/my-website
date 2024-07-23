@@ -7,7 +7,6 @@ const bcrypt = require('bcryptjs');
 const User = require('./models/User'); // Ensure this path is correct
 
 const app = express();
-const PORT = 3000;
 
 // Connect to MongoDB Atlas
 mongoose.connect('mongodb+srv://ngwa5755:uXDmuBsGDMuW2EM1@cluster0.r0jzmjg.mongodb.net/mywebsite?retryWrites=true&w=majority&appName=Cluster0', 
