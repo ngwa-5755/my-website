@@ -137,21 +137,21 @@ app.post('/forms/evaluation-schedule', async (req, res) => {
 });
 
 // Handle form submissions
-app.post('/forms/evaluation-schedule.html', async (req, res) => {
+app.post('/forms/evaluation-schedules.html', async (req, res) => {
   const { evaluatorName, evaluationDate, comments } = req.body;
   const evaluationSchedule = new EvaluationSchedule({ evaluatorName, evaluationDate, comments });
   await evaluationSchedule.save();
   res.redirect('/evaluation-schedule.html');
 });
 
-app.post('/forms/faculty-evaluation.html', async (req, res) => {
+app.post('/forms/faculty-evaluations.html', async (req, res) => {
   const { facultyName, course, evaluationDate, evaluator, teachingEffectiveness, courseContent, engagement, comments } = req.body;
   const facultyEvaluation = new FacultyEvaluation({ facultyName, course, evaluationDate, evaluator, teachingEffectiveness, courseContent, engagement, comment>
   await facultyEvaluation.save();
   res.redirect('/faculty-evaluation.html');
 });
 
-app.post('/forms/peer-review.html', async (req, res) => {
+app.post('/forms/peer-reviews.html', async (req, res) => {
   const { reviewerName, revieweeName, reviewDate, communication, teamwork, problemSolving, workQuality, comments } = req.body;
   const peerReview = new PeerReview({ reviewerName, revieweeName, reviewDate, communication, teamwork, problemSolving, workQuality, comments });
   await peerReview.save();
@@ -161,7 +161,7 @@ app.post('/forms/peer-review.html', async (req, res) => {
 app.post('/forms/self-assessment', ensureAuthenticated, (req, res) => {
   // Handle form submission logic here
   const { name, email, department, performance, goals, evidence } = req.body; 
-  const selfAssessment = new selfAssessment({ name, email, department, performance, goals, evidence });
+  const selfAssessment = new SelfAssessment({ name, email, department, performance, goals, evidence });
   res.redirect('/forms');
 });
 
