@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Faculty Evaluations</title>
+</head>
+<body>
+  <h1>Faculty Evaluations</h1>
+  <ul>
+    <% evaluations.forEach(evaluation => { %>
+      <li>
+        <strong>Faculty Name:</strong> <%= evaluation.facultyName %><br>
+        <strong>Course:</strong> <%= evaluation.course %><br>
+        <strong>Evaluation Date:</strong> <%= evaluation.evaluationDate.toDateString() %><br>
+        <strong>Evaluator:</strong> <%= evaluation.evaluator %><br>
+        <strong>Teaching Effectiveness:</strong> <%= evaluation.teachingEffectiveness %><br>
+        <strong>Course Content:</strong> <%= evaluation.courseContent %><br>
+        <strong>Engagement:</strong> <%= evaluation.engagement %><br>
+        <strong>Comments:</strong> <%= evaluation.comments %><br>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>
+
