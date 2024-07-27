@@ -40,10 +40,15 @@ router.post('/login', async (req, res) => {
   }
 });
 
-// Logout handler
+// Sign out route
 router.get('/logout', (req, res) => {
-  req.session.destroy();
-  res.redirect('/');
+    req.session.destroy((err) => {
+        if (err) {
+            return res.status(500).send('Unable to sign out');
+        }
+        res.clearCookie('connect.sid'); // Replace 'connect.sid' with your session cookie name if different
+        res.redirect('/'); // Redirect to the home page or login page
+    });
 });
 
 module.exports = router;
