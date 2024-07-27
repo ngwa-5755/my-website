@@ -425,3 +425,16 @@ footer {
     background-color: #333; /* Dark background on hover */
     border-color: #fff; /* Light border on hover */
 }
+.image {
+        background-image: url('https://schoolproject-automated-system.s3.amazonaws.com/pgcc+logos/Logos/Picture2.png');
+        background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-size: cover;
+        background-position: center;
+}
+.responsive-image {
+        max-with: 100%;
+        height: auto;
+        display:block;
+}
+
