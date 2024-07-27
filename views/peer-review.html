@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Peer Review</title>
+</head>
+<body>
+  <h1>Submit Peer Review</h1>
+  <form action="/peer-review" method="post">
+    <label>Reviewer Name:</label>
+    <input type="text" name="reviewerName" required>
+    <br>
+    <label>Reviewee Name:</label>
+    <input type="text" name="revieweeName" required>
+    <br>
+    <label>Review Date:</label>
+    <input type="date" name="reviewDate" required>
+    <br>
+    <label>Communication (1-5):</label>
+    <input type="number" name="communication" min="1" max="5" required>
+    <br>
+    <label>Teamwork (1-5):</label>
+    <input type="number" name="teamwork" min="1" max="5" required>
+    <br>
+    <label>Problem Solving (1-5):</label>
+    <input type="number" name="problemSolving" min="1" max="5" required>
+    <br>
+    <label>Work Quality (1-5):</label>
+    <input type="number" name="workQuality" min="1" max="5" required>
+    <br>
+    <label>Comments:</label>
+    <textarea name="comments"></textarea>
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
