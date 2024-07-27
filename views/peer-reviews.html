@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Peer Reviews</title>
+</head>
+<body>
+  <h1>Peer Reviews</h1>
+  <ul>
+    <% reviews.forEach(review => { %>
+      <li>
+        <strong>Reviewer Name:</strong> <%= review.reviewerName %><br>
+        <strong>Reviewee Name:</strong> <%= review.revieweeName %><br>
+        <strong>Review Date:</strong> <%= review.reviewDate.toDateString() %><br>
+        <strong>Communication:</strong> <%= review.communication %><br>
+        <strong>Teamwork:</strong> <%= review.teamwork %><br>
+        <strong>Problem Solving:</strong> <%= review.problemSolving %><br>
+        <strong>Work Quality:</strong> <%= review.workQuality %><br>
+        <strong>Comments:</strong> <%= review.comments %><br>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>
