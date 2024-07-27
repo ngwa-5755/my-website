@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Evaluation Schedules</title>
+</head>
+<body>
+  <h1>Evaluation Schedules</h1>
+  <ul>
+    <% evaluations.forEach(evaluation => { %>
+      <li>
+        <strong>Name:</strong> <%= evaluation.name %><br>
+        <strong>Evaluator:</strong> <%= evaluation.evaluator %><br>
+        <strong>Date:</strong> <%= evaluation.date.toDateString() %><br>
+        <strong>Start Time:</strong> <%= evaluation.startTime %><br>
+        <strong>End Time:</strong> <%= evaluation.endTime %><br>
+        <strong>Type:</strong> <%= evaluation.type %><br>
+        <strong>Location:</strong> <%= evaluation.location %><br>
+        <strong>Description:</strong> <%= evaluation.description %><br>
+        <strong>Comments:</strong> <%= evaluation.comments %><br>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>
