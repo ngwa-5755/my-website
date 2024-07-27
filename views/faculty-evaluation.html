@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Faculty Evaluation</title>
+</head>
+<body>
+  <h1>Submit Faculty Evaluation</h1>
+  <form action="/faculty-evaluation" method="post">
+    <label>Faculty Name:</label>
+    <input type="text" name="facultyName" required>
+    <br>
+    <label>Course:</label>
+    <input type="text" name="course" required>
+    <br>
+    <label>Evaluation Date:</label>
+    <input type="date" name="evaluationDate" required>
+    <br>
+    <label>Evaluator:</label>
+    <input type="text" name="evaluator" required>
+    <br>
+    <label>Teaching Effectiveness (1-5):</label>
+    <input type="number" name="teachingEffectiveness" min="1" max="5" required>
+    <br>
+    <label>Course Content (1-5):</label>
+    <input type="number" name="courseContent" min="1" max="5" required>
+    <br>
+    <label>Engagement (1-5):</label>
+    <input type="number" name="engagement" min="1" max="5" required>
+    <br>
+    <label>Comments:</label>
+    <textarea name="comments"></textarea>
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
